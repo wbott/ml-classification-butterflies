@@ -1,0 +1,29 @@
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# Jupyter Notebook
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Python environment (if applicable)
+.venv/
+venv/
+env/
+=======
+env/
+
+# Kaggle_Datasets
+kaggle_dataset
+
+#Model files
+*.h5
+*.keras
+
