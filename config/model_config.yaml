@@ -1,0 +1,52 @@
+data:
+  image_size: [224, 224]
+  batch_size: 32
+  validation_split: 0.2
+  num_classes: 75
+
+training:
+  epochs: 50
+  learning_rate: 0.0001
+  early_stopping_patience: 5
+  reduce_lr_patience: 3
+  reduce_lr_factor: 0.5
+
+models:
+  fnn:
+    hidden_layers: [1024, 512, 256, 128]
+    dropout_rates: [0.5, 0.4, 0.3, 0.2]
+  
+  cnn:
+    filters: [32, 64, 128]
+    kernel_size: 3
+    pool_size: 2
+    dense_units: 512
+    dropout_rate: 0.5
+  
+  vgg16:
+    dense_units: 512
+    dropout_rate: 0.3
+    batch_norm: true
+
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  logs_dir: "logs"
+
+augmentation:
+  rotation_range: 20
+  width_shift_range: 0.2
+  height_shift_range: 0.2
+  shear_range: 0.2
+  zoom_range: 0.2
+  horizontal_flip: true
+
+optimization:
+  vgg16_optimized:
+    learning_rate: 0.0001
+    reduced_augmentation:
+      rotation_range: 15
+      width_shift_range: 0.1
+      height_shift_range: 0.1
+      shear_range: 0.1
+      zoom_range: 0.1
