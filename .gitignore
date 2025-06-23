@@ -42,5 +42,4 @@ kaggle_dataset
 
 #Model files
 *.h5
-*.keras
 
