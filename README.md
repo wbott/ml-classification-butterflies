@@ -70,6 +70,7 @@ python scripts/train_model.py \
 
 ## 🛠️ **Technology Stack**
 
+
 ### **Core ML & Data Science**
 - ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8%2B-FF6F00?logo=tensorflow) **TensorFlow/Keras**: Deep learning framework for model building
 - ![NumPy](https://img.shields.io/badge/NumPy-1.21%2B-013243?logo=numpy) **NumPy**: Numerical computing and array operations
